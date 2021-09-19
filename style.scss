@@ -1,5 +1,6 @@
 
 body {
+  
   background-color: rgb(6, 8, 66); 
   background-image: url("/imagens/back.png");
   background-repeat: no-repeat;
@@ -18,6 +19,9 @@ body {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    font-family: system-ui;
+    font-style: bold;
+  
   }
 }
 
@@ -25,10 +29,11 @@ body {
   background-image: url("imagens/back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right top;
-  margin-bottom: 30px;
-
+  background-position: right top ;
+  // margin-bottom: 30px;
   text-align: center;
+  border-bottom: 2px solid grey;
+  
   .texto-imagens{
     color: white;
     text-decoration: none;
@@ -39,6 +44,7 @@ body {
     a{
       color: white;
       text-decoration: none;
+
     }
   }
 }
@@ -97,3 +103,100 @@ li a:hover {
   margin: auto;
 }
 
+  //  ESTILO PAG DE GERAR ALERTA
+
+
+  body{
+    font-family: Arial;
+    // background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    border-radius: 15px;
+    width: 30%;
+}
+
+legend{
+    
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+#data_nascimento{
+    border: none;
+    padding: 2px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#submit{
+    background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+.select{
+  font-family: Arial;
+  height: 50px;
+  display:inline-block;
+  
+  
+}
+
+ // CÓDIGO RESPONSIVO TABLET E CELULAR
+
+    @media screen and (max-width:768px) {
+      menutop{
+        float: none;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width:640px) {
+      menu-texto{
+        font-size:5px;
+      } 
+    }
+    
